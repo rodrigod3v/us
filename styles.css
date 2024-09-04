@@ -1,0 +1,79 @@
+body {
+    background-image: url('bg2.jpg'); /* Substitua 'sua-imagem.jpg' pelo caminho da sua imagem */
+    background-size: center;
+    background-position: left; /* Centraliza a imagem no fundo */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    font-family: 'Cursive', sans-serif; /* Fonte cursiva para um toque romântico */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.romantic-button {
+    background-color: #ffb6c1; /* Rosa claro, evocando um sentimento romântico */
+    color: white;
+    border: 2px solid #ff69b4; /* Borda rosa mais vibrante */
+    border-radius: 25px; /* Bordas arredondadas */
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.romantic-button:hover {
+    background-color: #ff69b4; /* Escurece o rosa ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o botão ao passar o mouse */
+}
+
+.romantic-button:focus {
+    outline: none;
+    box-shadow: 0 0 10px #ff69b4; /* Adiciona um brilho ao redor do botão ao focar */
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    min-width: 100%;
+    border-radius: 10px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
