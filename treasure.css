@@ -1,0 +1,94 @@
+/* Definindo o corpo com uma fonte amigável e um fundo suave em tons de rosa */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe6f2;
+    color: #880e4f;
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilizando o contêiner principal */
+.container {
+    background-color: #fff0f5;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Título principal com destaque em rosa forte */
+h1 {
+    color: #ff4081;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+/* Texto descritivo */
+p {
+    font-size: 1.2em;
+    color: #880e4f;
+}
+
+/* Grid para as caixas do tesouro */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Cada caixa do jogo */
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: #ffc0cb;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Efeito ao passar o mouse sobre as caixas */
+.box:hover {
+    background-color: #ffb6c1;
+    transform: scale(1.1); /* Efeito de ampliação */
+}
+
+/* Mensagem após encontrar ou continuar procurando */
+#message {
+    margin-top: 30px;
+    font-size: 1.5em;
+    color: #e91e63;
+}
+
+/* Estilo responsivo para dispositivos móveis */
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(2, 120px);
+        grid-gap: 10px;
+    }
+
+    .box {
+        width: 120px;
+        height: 120px;
+        font-size: 2em;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
